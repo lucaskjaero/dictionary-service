@@ -30,6 +30,10 @@ def main():
     with io.open("cedict_ts.u8", encoding="utf-8") as cedict_file:
         entries.extend([parse_entry(line) for line in cedict_file if line[0] != "#"])
 
+    # Assign unique ID to match to difficulty levels
+    for index, entry in enumerate(entries):
+        entry['id'] = index
+
     with io.open('cedict.json', 'w', encoding="utf-8") as outfile:
         json.dump(entries, outfile, ensure_ascii=False)
 
