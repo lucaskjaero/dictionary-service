@@ -99,3 +99,6 @@ ENV/
 
 # mypy
 .mypy_cache/
+
+#CEDICT
+*/cedict_ts.u8
