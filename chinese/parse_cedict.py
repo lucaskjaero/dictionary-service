@@ -1,3 +1,4 @@
+import json
 
 
 def parse_entry(line):
@@ -21,3 +22,16 @@ def parse_entry(line):
         "pinyin": pinyin,
         "definition": definition
     }
+
+
+def main():
+    entries = []
+    with open("cedict_ts.u8") as cedict_file:
+        entries.extend([parse_entry(line) for line in cedict_file if line[0] != "#"])
+
+    with open('cedict.json', 'w') as outfile:
+        json.dump(entries, outfile)
+
+
+if __name__ == '__main__':
+    main()
