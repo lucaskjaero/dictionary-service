@@ -1,4 +1,5 @@
 import json
+import io
 
 
 def parse_entry(line):
@@ -26,11 +27,11 @@ def parse_entry(line):
 
 def main():
     entries = []
-    with open("cedict_ts.u8") as cedict_file:
+    with io.open("cedict_ts.u8", encoding="utf-8") as cedict_file:
         entries.extend([parse_entry(line) for line in cedict_file if line[0] != "#"])
 
-    with open('cedict.json', 'w') as outfile:
-        json.dump(entries, outfile)
+    with io.open('cedict.json', 'w', encoding="utf-8") as outfile:
+        json.dump(entries, outfile, ensure_ascii=False)
 
 
 if __name__ == '__main__':
