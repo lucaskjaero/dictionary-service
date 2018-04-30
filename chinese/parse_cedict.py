@@ -25,6 +25,21 @@ def parse_entry(line):
     }
 
 
+def apply_hsk(entries):
+    with io.open("hsk.json", encoding='utf-8') as hsk_file:
+        hsk = json.load(hsk_file)
+
+        HSK1 = hsk['HSK1']
+        for word in HSK1:
+            id = word['id']
+
+            assert(entries[id]['simplified'] == word['simplified'])
+            
+            entries[id]['HSK'] = 1
+
+    return entries
+
+
 def main():
     entries = []
     with io.open("cedict_ts.u8", encoding="utf-8") as cedict_file:
@@ -33,6 +48,8 @@ def main():
     # Assign unique ID to match to difficulty levels
     for index, entry in enumerate(entries):
         entry['id'] = index
+
+    entries = apply_hsk(entries)
 
     with io.open('cedict.json', 'w', encoding="utf-8") as outfile:
         json.dump(entries, outfile, ensure_ascii=False)

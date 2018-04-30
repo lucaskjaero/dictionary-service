@@ -1,0 +1,440 @@
+{
+  "HSK1": [
+    {
+      "id": 39624,
+      "simplified": "爱"
+    },
+    {
+      "id": 10694,
+      "simplified": "八"
+    },
+    {
+      "id": 66240,
+      "simplified": "爸爸"
+    },
+    {
+      "id": 52125,
+      "simplified": "杯子"
+    },
+    {
+      "id": 14953,
+      "simplified": "北京"
+    },
+    {
+      "id": 51621,
+      "simplified": "本"
+    },
+    {
+      "id": 2140,
+      "simplified": "不客气"
+    },
+    {
+      "id": 1836,
+      "simplified": "不"
+    },
+    {
+      "id": 87470,
+      "simplified": "菜"
+    },
+    {
+      "id": 86996,
+      "simplified": "茶"
+    },
+    {
+      "id": 12250,
+      "simplified": "出租车"
+    },
+    {
+      "id": 41635,
+      "simplified": "打电话"
+    },
+    {
+      "id": 115216,
+      "simplified": "点"
+    },
+    {
+      "id": 108423,
+      "simplified": "电脑"
+    },
+    {
+      "id": 108447,
+      "simplified": "电视"
+    },
+    {
+      "id": 108332,
+      "simplified": "电影"
+    },
+    {
+      "id": 31697,
+      "simplified": "对不起"
+    },
+    {
+      "id": 25307,
+      "simplified": "多"
+    },
+    {
+      "id": 10114,
+      "simplified": "儿子"
+    },
+    {
+      "id": 4283,
+      "simplified": "二"
+    },
+    {
+      "id": 110954,
+      "simplified": "饭馆"
+    },
+    {
+      "id": 110766,
+      "simplified": "飞机"
+    },
+    {
+      "id": 12595,
+      "simplified": "分钟"
+    },
+    {
+      "id": 112874,
+      "simplified": "高兴"
+    },
+    {
+      "id": 33752,
+      "simplified": "工作"
+    },
+    {
+      "id": 67018,
+      "simplified": "狗"
+    },
+    {
+      "id": 63133,
+      "simplified": "汉语"
+    },
+    {
+      "id": 37097,
+      "simplified": "很"
+    },
+    {
+      "id": 37253,
+      "simplified": "后面"
+    },
+    {
+      "id": 64144,
+      "simplified": "火车站"
+    },
+    {
+      "id": 5603,
+      "simplified": "今天"
+    },
+    {
+      "id": 3881,
+      "simplified": "九"
+    },
+    {
+      "id": 105017,
+      "simplified": "开"
+    },
+    {
+      "id": 72618,
+      "simplified": "看见"
+    },
+    {
+      "id": 24327,
+      "simplified": "块"
+    },
+    {
+      "id": 7080,
+      "simplified": "来"
+    },
+    {
+      "id": 82167,
+      "simplified": "老师"
+    },
+    {
+      "id": 108113,
+      "simplified": "零"
+    },
+    {
+      "id": 11089,
+      "simplified": "六"
+    },
+    {
+      "id": 28746,
+      "simplified": "妈妈"
+    },
+    {
+      "id": 95773,
+      "simplified": "买"
+    },
+    {
+      "id": 95315,
+      "simplified": "猫"
+    },
+    {
+      "id": 58775,
+      "simplified": "没关系"
+    },
+    {
+      "id": 77785,
+      "simplified": "米饭"
+    },
+    {
+      "id": 49100,
+      "simplified": "明天"
+    },
+    {
+      "id": 18771,
+      "simplified": "名字"
+    },
+    {
+      "id": 6925,
+      "simplified": "你"
+    },
+    {
+      "id": 27724,
+      "simplified": "女儿"
+    },
+    {
+      "id": 51148,
+      "simplified": "朋友"
+    },
+    {
+      "id": 62948,
+      "simplified": "漂亮"
+    },
+    {
+      "id": 89467,
+      "simplified": "苹果"
+    },
+    {
+      "id": 900,
+      "simplified": "七"
+    },
+    {
+      "id": 13432,
+      "simplified": "前面"
+    },
+    {
+      "id": 94183,
+      "simplified": "请"
+    },
+    {
+      "id": 16737,
+      "simplified": "去"
+    },
+    {
+      "id": 65641,
+      "simplified": "热"
+    },
+    {
+      "id": 5190,
+      "simplified": "人"
+    },
+    {
+      "id": 93721,
+      "simplified": "认识"
+    },
+    {
+      "id": 20602,
+      "simplified": "商店"
+    },
+    {
+      "id": 1386,
+      "simplified": "上午"
+    },
+    {
+      "id": 93992,
+      "simplified": "谁"
+    },
+    {
+      "id": 5515,
+      "simplified": "什么"
+    },
+    {
+      "id": 15280,
+      "simplified": "十"
+    },
+    {
+      "id": 49529,
+      "simplified": "时候"
+    },
+    {
+      "id": 57891,
+      "simplified": "水果"
+    },
+    {
+      "id": 72996,
+      "simplified": "睡觉"
+    },
+    {
+      "id": 93973,
+      "simplified": "说话"
+    },
+    {
+      "id": 22014,
+      "simplified": "四"
+    },
+    {
+      "id": 5665,
+      "simplified": "他"
+    },
+    {
+      "id": 27877,
+      "simplified": "她"
+    },
+    {
+      "id": 26931,
+      "simplified": "太"
+    },
+    {
+      "id": 26753,
+      "simplified": "天气"
+    },
+    {
+      "id": 18599,
+      "simplified": "同学"
+    },
+    {
+      "id": 40718,
+      "simplified": "我"
+    },
+    {
+      "id": 40721,
+      "simplified": "我们"
+    },
+    {
+      "id": 4542,
+      "simplified": "五"
+    },
+    {
+      "id": 21004,
+      "simplified": "喜欢"
+    },
+    {
+      "id": 1637,
+      "simplified": "下"
+    },
+    {
+      "id": 1664,
+      "simplified": "下午"
+    },
+    {
+      "id": 1811,
+      "simplified": "下雨"
+    },
+    {
+      "id": 68102,
+      "simplified": "现在"
+    },
+    {
+      "id": 39430,
+      "simplified": "想"
+    },
+    {
+      "id": 31915,
+      "simplified": "小"
+    },
+    {
+      "id": 32001,
+      "simplified": "小姐"
+    },
+    {
+      "id": 4747,
+      "simplified": "些"
+    },
+    {
+      "id": 31193,
+      "simplified": "写"
+    },
+    {
+      "id": 94523,
+      "simplified": "谢谢"
+    },
+    {
+      "id": 49308,
+      "simplified": "星期"
+    },
+    {
+      "id": 29437,
+      "simplified": "学生"
+    },
+    {
+      "id": 29448,
+      "simplified": "学习"
+    },
+    {
+      "id": 29424,
+      "simplified": "学校"
+    },
+    {
+      "id": 250,
+      "simplified": "一"
+    },
+    {
+      "id": 91107,
+      "simplified": "衣服"
+    },
+    {
+      "id": 102345,
+      "simplified": "医生"
+    },
+    {
+      "id": 102366,
+      "simplified": "医院"
+    },
+    {
+      "id": 54171,
+      "simplified": "椅子"
+    },
+    {
+      "id": 50825,
+      "simplified": "有"
+    },
+    {
+      "id": 50731,
+      "simplified": "月"
+    },
+    {
+      "id": 23112,
+      "simplified": "在"
+    },
+    {
+      "id": 11450,
+      "simplified": "再见"
+    },
+    {
+      "id": 38369,
+      "simplified": "怎么样"
+    },
+    {
+      "id": 99612,
+      "simplified": "这"
+    },
+    {
+      "id": 2983,
+      "simplified": "中国"
+    },
+    {
+      "id": 2964,
+      "simplified": "中午"
+    },
+    {
+      "id": 6664,
+      "simplified": "住"
+    },
+    {
+      "id": 53568,
+      "simplified": "桌子"
+    },
+    {
+      "id": 29076,
+      "simplified": "字"
+    },
+    {
+      "id": 49457,
+      "simplified": "昨天"
+    },
+    {
+      "id": 8491,
+      "simplified": "做"
+    }
+  ]
+}

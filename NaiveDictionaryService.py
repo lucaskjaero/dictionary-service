@@ -8,8 +8,9 @@ api = Api(app)
 
 # Yes we're just storing this in memory for now
 # If this has too much load after caching we can re-architect it
-cedict = open("chinese/cedict.json")
-chinese_dictionary = json.load(cedict)
+chinese_dictionary = []
+with open("chinese/cedict.json") as cedict:
+    chinese_dictionary.extend(json.load(cedict))
 
 
 class WordHandler(Resource):
