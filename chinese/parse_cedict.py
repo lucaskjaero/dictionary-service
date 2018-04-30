@@ -30,11 +30,11 @@ def apply_hsk_level(entries, words, number):
         id = word['id']
 
         # Be prepared for the day that the order changes
-        assert(entries[id]['simplified'] == word['simplified'])
+        assert entries[id]['simplified'] == word['simplified']
 
         entries[id]['HSK'] = number
 
-        return entries
+    return entries
 
 
 def apply_hsk(entries):
