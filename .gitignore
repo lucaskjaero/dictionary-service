@@ -100,5 +100,11 @@ ENV/
 # mypy
 .mypy_cache/
 
-#CEDICT
+# CEDICT
 */cedict_ts.u8
+
+# HSK levels downloaded from https://github.com/gigacool/hanyu-shuiping-kaoshi
+hsk-level-*.json
+
+# Scratchpads
+*.ipynb

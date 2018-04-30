@@ -25,14 +25,14 @@ def parse_entry(line):
     }
 
 
-def apply_hsk_level(entries, words):
+def apply_hsk_level(entries, words, number):
     for word in words:
         id = word['id']
 
         # Be prepared for the day that the order changes
         assert(entries[id]['simplified'] == word['simplified'])
 
-        entries[id]['HSK'] = 1
+        entries[id]['HSK'] = number
 
         return entries
 
@@ -41,8 +41,7 @@ def apply_hsk(entries):
     with io.open("hsk.json", encoding='utf-8') as hsk_file:
         hsk = json.load(hsk_file)
 
-        for level in ["HSK1"]:
-            entries = apply_hsk_level(entries, hsk[level])
+        entries = apply_hsk_level(entries, hsk["HSK1"], 1)
 
     return entries
 
