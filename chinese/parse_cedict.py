@@ -45,6 +45,7 @@ def apply_hsk(entries):
         entries = apply_hsk_level(entries, hsk["HSK2"], 2)
         entries = apply_hsk_level(entries, hsk["HSK3"], 3)
         entries = apply_hsk_level(entries, hsk["HSK4"], 4)
+        entries = apply_hsk_level(entries, hsk["HSK5"], 5)
 
     return entries
 
