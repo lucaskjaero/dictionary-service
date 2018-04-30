@@ -42,6 +42,7 @@ def apply_hsk(entries):
         hsk = json.load(hsk_file)
 
         entries = apply_hsk_level(entries, hsk["HSK1"], 1)
+        entries = apply_hsk_level(entries, hsk["HSK2"], 2)
 
     return entries
 
