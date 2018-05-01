@@ -13,6 +13,14 @@ with open("chinese/cedict.json") as cedict:
     chinese_dictionary.extend(json.load(cedict))
 
 
+def sort_by_hsk(a):
+    try:
+        sort_value = a['HSK']
+    except KeyError:
+        sort_value = 7
+    return sort_value
+
+
 class WordHandler(Resource):
     def get(self, language, word):
         # Default responses
@@ -21,7 +29,7 @@ class WordHandler(Resource):
         status = "OK"
 
         if language == "chinese":
-            entries = [entry for entry in chinese_dictionary if entry['simplified'] == word or entry['traditional'] == word]
+            entries = sorted([entry for entry in chinese_dictionary if entry['simplified'] == word or entry['traditional'] == word], key=sort_by_hsk)
         else:
             status = "ERROR"
             message = "Language %s has not been implemented yet." % language
