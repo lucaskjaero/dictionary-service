@@ -8,11 +8,11 @@ def parse_entry(line):
 
     # Since the definition can have slashes, let's take this off first
     front, back = cleaned_line.split("/", 1)
-    definition = back[:-1] # No trailing /
+    definitions = back[:-1].split("/") # No trailing / and multiple definitions
 
     # Extract the pinyin next since there's a defined pattern for this
     head, tail = front.split("[")
-    pinyin = tail.replace("]", "")
+    pinyin = tail.replace("]", "")[:-1] # Remove trailing space
 
     # Carve up the rest
     traditional, simplified, _ = head.split(" ")
@@ -21,7 +21,7 @@ def parse_entry(line):
         "traditional": traditional,
         "simplified": simplified,
         "pinyin": pinyin,
-        "definition": definition
+        "definitions": definitions
     }
 
 
@@ -41,12 +41,12 @@ def apply_hsk(entries):
     with io.open("hsk.json", encoding='utf-8') as hsk_file:
         hsk = json.load(hsk_file)
 
-        entries = apply_hsk_level(entries, hsk["HSK1"], 1)
-        entries = apply_hsk_level(entries, hsk["HSK2"], 2)
-        entries = apply_hsk_level(entries, hsk["HSK3"], 3)
-        entries = apply_hsk_level(entries, hsk["HSK4"], 4)
-        entries = apply_hsk_level(entries, hsk["HSK5"], 5)
         entries = apply_hsk_level(entries, hsk["HSK6"], 6)
+        entries = apply_hsk_level(entries, hsk["HSK5"], 5)
+        entries = apply_hsk_level(entries, hsk["HSK4"], 4)
+        entries = apply_hsk_level(entries, hsk["HSK3"], 3)
+        entries = apply_hsk_level(entries, hsk["HSK2"], 2)
+        entries = apply_hsk_level(entries, hsk["HSK1"], 1)
 
     return entries
 

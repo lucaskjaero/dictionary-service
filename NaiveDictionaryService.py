@@ -21,12 +21,12 @@ class WordHandler(Resource):
         status = "OK"
 
         if language == "chinese":
-            definitions = [entry for entry in chinese_dictionary if entry['simplified'] == word or entry['traditional'] == word]
+            entries = [entry for entry in chinese_dictionary if entry['simplified'] == word or entry['traditional'] == word]
         else:
             status = "ERROR"
             message = "Language %s has not been implemented yet." % language
 
-        return {"status": status, "message": message, "definitions": definitions}
+        return {"status": status, "message": message, "entries": entries}
 
 api.add_resource(WordHandler, '/v1/<string:language>/definition/<string:word>')
 
