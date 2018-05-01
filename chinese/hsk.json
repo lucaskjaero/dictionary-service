@@ -2427,6 +2427,10 @@
       "simplified": "安全"
     },
     {
+      "id": 50043,
+      "simplified": "暗"
+    },
+    {
       "id": 43503,
       "simplified": "按时"
     },
@@ -2481,6 +2485,10 @@
     {
       "id": 69762,
       "simplified": "毕业"
+    },
+    {
+      "id": 100402,
+      "simplified": "遍"
     },
     {
       "id": 54926,
@@ -2563,6 +2571,14 @@
       "simplified": "长江"
     },
     {
+      "id": 21544,
+      "simplified": "尝"
+    },
+    {
+      "id": 24297,
+      "simplified": "场"
+    },
+    {
       "id": 96898,
       "simplified": "超过"
     },
@@ -2573,6 +2589,10 @@
     {
       "id": 3810,
       "simplified": "乘坐"
+    },
+    {
+      "id": 40599,
+      "simplified": "成功"
     },
     {
       "id": 40668,
@@ -2667,6 +2687,10 @@
       "simplified": "大约"
     },
     {
+      "id": 40954,
+      "simplified": "戴"
+    },
+    {
       "id": 5840,
       "simplified": "代表"
     },
@@ -2675,8 +2699,32 @@
       "simplified": "代替"
     },
     {
+      "id": 25861,
+      "simplified": "大夫"
+    },
+    {
+      "id": 69974,
+      "simplified": "当"
+    },
+    {
+      "id": 69975,
+      "simplified": "当"
+    },
+    {
       "id": 70010,
       "simplified": "当地"
+    },
+    {
+      "id": 70034,
+      "simplified": "当时"
+    },
+    {
+      "id": 70035,
+      "simplified": "当时"
+    },
+    {
+      "id": 12344,
+      "simplified": "刀"
     },
     {
       "id": 31911,
@@ -2705,6 +2753,10 @@
     {
       "id": 77033,
       "simplified": "等"
+    },
+    {
+      "id": 35494,
+      "simplified": "底"
     },
     {
       "id": 23303,
@@ -2763,12 +2815,20 @@
       "simplified": "顿"
     },
     {
+      "id": 51803,
+      "simplified": "朵"
+    },
+    {
       "id": 82380,
       "simplified": "而"
     },
     {
       "id": 10121,
       "simplified": "儿童"
+    },
+    {
+      "id": 70707,
+      "simplified": "发"
     },
     {
       "id": 70830,
@@ -2847,6 +2907,10 @@
       "simplified": "符合"
     },
     {
+      "id": 30784,
+      "simplified": "富"
+    },
+    {
       "id": 95445,
       "simplified": "负责"
     },
@@ -2889,6 +2953,14 @@
     {
       "id": 39818,
       "simplified": "感谢"
+    },
+    {
+      "id": 4053,
+      "simplified": "干"
+    },
+    {
+      "id": 35300,
+      "simplified": "干"
     },
     {
       "id": 13478,
@@ -2999,6 +3071,14 @@
       "simplified": "果然"
     },
     {
+      "id": 100412,
+      "simplified": "过"
+    },
+    {
+      "id": 100413,
+      "simplified": "过"
+    },
+    {
       "id": 100518,
       "simplified": "过程"
     },
@@ -3013,6 +3093,10 @@
     {
       "id": 30867,
       "simplified": "寒假"
+    },
+    {
+      "id": 58255,
+      "simplified": "汗"
     },
     {
       "id": 85837,
@@ -3087,6 +3171,10 @@
       "simplified": "活泼"
     },
     {
+      "id": 64016,
+      "simplified": "火"
+    },
+    {
       "id": 67495,
       "simplified": "获得"
     },
@@ -3159,6 +3247,10 @@
       "simplified": "加油站"
     },
     {
+      "id": 8289,
+      "simplified": "假"
+    },
+    {
       "id": 9354,
       "simplified": "价格"
     },
@@ -3223,6 +3315,10 @@
       "simplified": "节约"
     },
     {
+      "id": 79309,
+      "simplified": "结果"
+    },
+    {
       "id": 92819,
       "simplified": "解释"
     },
@@ -3245,6 +3341,10 @@
     {
       "id": 77975,
       "simplified": "精彩"
+    },
+    {
+      "id": 78010,
+      "simplified": "精神"
     },
     {
       "id": 79707,
@@ -3347,6 +3447,18 @@
       "simplified": "苦"
     },
     {
+      "id": 31213,
+      "simplified": "宽"
+    },
+    {
+      "id": 22392,
+      "simplified": "困"
+    },
+    {
+      "id": 72951,
+      "simplified": "困"
+    },
+    {
       "id": 22404,
       "simplified": "困难"
     },
@@ -3363,12 +3475,20 @@
       "simplified": "垃圾桶"
     },
     {
+      "id": 98779,
+      "simplified": "辣"
+    },
+    {
       "id": 7082,
       "simplified": "来不及"
     },
     {
       "id": 7099,
       "simplified": "来得及"
+    },
+    {
+      "id": 40382,
+      "simplified": "懒"
     },
     {
       "id": 60486,
@@ -3419,6 +3539,14 @@
       "simplified": "俩"
     },
     {
+      "id": 99923,
+      "simplified": "连"
+    },
+    {
+      "id": 82961,
+      "simplified": "联系"
+    },
+    {
       "id": 61148,
       "simplified": "凉快"
     },
@@ -3433,6 +3561,10 @@
     {
       "id": 17612,
       "simplified": "另外"
+    },
+    {
+      "id": 69656,
+      "simplified": "留"
     },
     {
       "id": 69670,
@@ -3465,6 +3597,10 @@
     {
       "id": 111793,
       "simplified": "马虎"
+    },
+    {
+      "id": 62814,
+      "simplified": "满"
     },
     {
       "id": 57258,
@@ -3529,6 +3665,10 @@
     {
       "id": 98919,
       "simplified": "农村"
+    },
+    {
+      "id": 36148,
+      "simplified": "弄"
     },
     {
       "id": 50019,
@@ -3603,6 +3743,14 @@
       "simplified": "起飞"
     },
     {
+      "id": 96705,
+      "simplified": "起来"
+    },
+    {
+      "id": 96706,
+      "simplified": "起来"
+    },
+    {
       "id": 57539,
       "simplified": "气候"
     },
@@ -3613,6 +3761,10 @@
     {
       "id": 77634,
       "simplified": "签证"
+    },
+    {
+      "id": 66287,
+      "simplified": "墙"
     },
     {
       "id": 47252,
@@ -3675,8 +3827,16 @@
       "simplified": "缺少"
     },
     {
+      "id": 16506,
+      "simplified": "却"
+    },
+    {
       "id": 74181,
       "simplified": "确实"
+    },
+    {
+      "id": 81688,
+      "simplified": "群"
     },
     {
       "id": 65202,
@@ -3715,6 +3875,10 @@
       "simplified": "入口"
     },
     {
+      "id": 98065,
+      "simplified": "软"
+    },
+    {
       "id": 47165,
       "simplified": "散步"
     },
@@ -3743,6 +3907,10 @@
       "simplified": "社会"
     },
     {
+      "id": 61409,
+      "simplified": "深"
+    },
+    {
       "id": 69512,
       "simplified": "申请"
     },
@@ -3757,6 +3925,10 @@
     {
       "id": 68960,
       "simplified": "生命"
+    },
+    {
+      "id": 72464,
+      "simplified": "省"
     },
     {
       "id": 13530,
@@ -3777,6 +3949,10 @@
     {
       "id": 63714,
       "simplified": "湿润"
+    },
+    {
+      "id": 67311,
+      "simplified": "狮子"
     },
     {
       "id": 15327,
@@ -3867,6 +4043,10 @@
       "simplified": "数字"
     },
     {
+      "id": 34653,
+      "simplified": "帅"
+    },
+    {
       "id": 109794,
       "simplified": "顺便"
     },
@@ -3915,6 +4095,10 @@
       "simplified": "随着"
     },
     {
+      "id": 29342,
+      "simplified": "孙子"
+    },
+    {
       "id": 41077,
       "simplified": "所有"
     },
@@ -3923,12 +4107,36 @@
       "simplified": "抬"
     },
     {
+      "id": 55543,
+      "simplified": "台"
+    },
+    {
+      "id": 85377,
+      "simplified": "台"
+    },
+    {
       "id": 39895,
       "simplified": "态度"
     },
     {
+      "id": 94153,
+      "simplified": "谈"
+    },
+    {
+      "id": 36648,
+      "simplified": "弹"
+    },
+    {
+      "id": 62249,
+      "simplified": "汤"
+    },
+    {
       "id": 97833,
       "simplified": "躺"
+    },
+    {
+      "id": 97034,
+      "simplified": "趟"
     },
     {
       "id": 93086,
@@ -4003,6 +4211,10 @@
       "simplified": "完全"
     },
     {
+      "id": 37011,
+      "simplified": "往"
+    },
+    {
       "id": 37025,
       "simplified": "往往"
     },
@@ -4065,6 +4277,14 @@
     {
       "id": 59934,
       "simplified": "洗衣机"
+    },
+    {
+      "id": 114176,
+      "simplified": "咸"
+    },
+    {
+      "id": 68087,
+      "simplified": "现代"
     },
     {
       "id": 81736,
@@ -4131,6 +4351,14 @@
       "simplified": "兴奋"
     },
     {
+      "id": 90773,
+      "simplified": "行"
+    },
+    {
+      "id": 90774,
+      "simplified": "行"
+    },
+    {
       "id": 102268,
       "simplified": "醒"
     },
@@ -4145,6 +4373,10 @@
     {
       "id": 35292,
       "simplified": "幸福"
+    },
+    {
+      "id": 7788,
+      "simplified": "修"
     },
     {
       "id": 93258,
@@ -4231,6 +4463,10 @@
       "simplified": "一切"
     },
     {
+      "id": 5896,
+      "simplified": "以"
+    },
+    {
       "id": 9390,
       "simplified": "亿"
     },
@@ -4303,6 +4539,10 @@
       "simplified": "有趣"
     },
     {
+      "id": 16896,
+      "simplified": "友好"
+    },
+    {
       "id": 16903,
       "simplified": "友谊"
     },
@@ -4313,6 +4553,10 @@
     {
       "id": 48459,
       "simplified": "于是"
+    },
+    {
+      "id": 85465,
+      "simplified": "与"
     },
     {
       "id": 93803,
@@ -4369,6 +4613,10 @@
     {
       "id": 50157,
       "simplified": "暂时"
+    },
+    {
+      "id": 112469,
+      "simplified": "脏"
     },
     {
       "id": 95673,
@@ -4479,6 +4727,10 @@
       "simplified": "中文"
     },
     {
+      "id": 102699,
+      "simplified": "重点"
+    },
+    {
       "id": 102656,
       "simplified": "重视"
     },
@@ -4517,6 +4769,10 @@
     {
       "id": 31564,
       "simplified": "专业"
+    },
+    {
+      "id": 96301,
+      "simplified": "赚"
     },
     {
       "id": 45578,

@@ -14,12 +14,21 @@ def load_hsk_word_file(filename):
 
 
 def choose_option(hsk_word, options):
-    for candidate in options:
-        print(chinese_dictionary[candidate])
+    print(hsk_word)
+    for index, candidate in enumerate(options):
+        print("%s: %s" % (index, chinese_dictionary[candidate]))
 
-    choice_number = int(input("Choose option: "))
+    selection = input("Choose option: ")
 
-    return options[choice_number]
+    if selection == "all":
+        return options
+
+    if "," in selection:
+        selections = [int(option) for option in selection.split(",")]
+    else:
+        selections = [int(selection)]
+
+    return [options[selected_id] for selected_id in selections]
 
 
 chinese_dictionary = load_cedict()
@@ -44,10 +53,11 @@ def main():
             pass
 
         else:
-            level_words.append({
-                "id": choose_option(hsk_word, options),
-                "simplified": hsk_word
-            })
+            for selection in choose_option(hsk_word, options):
+                level_words.append({
+                    "id": selection,
+                    "simplified": hsk_word
+                })
 
     with open(output_file, 'w') as outfile:
         json.dump(level_words, outfile, ensure_ascii=False)
