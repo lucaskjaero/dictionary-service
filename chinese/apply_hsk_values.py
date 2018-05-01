@@ -23,6 +23,7 @@ def choose_option(hsk_word, options):
     if selection == "all":
         return options
 
+    # Allow multiple selections
     if "," in selection:
         selections = [int(option) for option in selection.split(",")]
     else:
