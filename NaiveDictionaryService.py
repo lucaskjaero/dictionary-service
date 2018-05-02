@@ -2,12 +2,13 @@ import json
 
 from flask import Flask, request
 from flask_restful import Resource, Api
+from flask_cors import CORS
 
 from chinese.Chinese import get_definition, HSKHandler
 
 app = Flask(__name__)
 api = Api(app)
-
+cors = CORS(app)
 
 class WordHandler(Resource):
     def get(self, language, word):
