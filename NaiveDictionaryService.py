@@ -20,9 +20,17 @@ class WordHandler(Resource):
         if language == "chinese":
             try:
                 entries = get_definition(word)
-            except:
+
+                if len(entries) == 0:
+                    print("Dictionary miss: %s" % word)
+                    
+                    message = "No entries found for %s" % word
+
+            except exception as e:
                 status = "ERROR"
                 message = "An error has occurred"
+
+                print(e)
         else:
             status = "ERROR"
             message = "Language %s has not been implemented yet." % language
