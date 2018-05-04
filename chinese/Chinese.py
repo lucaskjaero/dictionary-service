@@ -19,10 +19,19 @@ def sort_by_hsk(a):
 
 
 def get_definition(word):
-    return sorted([entry for entry in chinese_dictionary
-                   if entry['simplified'] == word
-                   or entry['traditional'] == word],
-    key=sort_by_hsk)
+    message = ""
+
+    entries = sorted([entry for entry in chinese_dictionary
+                        if entry['simplified'] == word
+                        or entry['traditional'] == word],
+                    key=sort_by_hsk)
+
+    if len(entries) == 0:
+        print("Dictionary miss: %s" % word)
+
+        message = "No entries found for %s" % word
+
+    return entries, message
 
 
 class HSKHandler(Resource):

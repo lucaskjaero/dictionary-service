@@ -17,23 +17,18 @@ class WordHandler(Resource):
         message = ""
         status = "OK"
 
-        if language == "chinese":
-            try:
-                entries = get_definition(word)
-
-                if len(entries) == 0:
-                    print("Dictionary miss: %s" % word)
-                    
-                    message = "No entries found for %s" % word
-
-            except exception as e:
+        try:
+            if language == "chinese":
+                message, entries = get_definition(word)
+            else:
                 status = "ERROR"
-                message = "An error has occurred"
+                message = "Language %s has not been implemented yet." % language
 
-                print(e)
-        else:
+        except exception as e:
             status = "ERROR"
-            message = "Language %s has not been implemented yet." % language
+            message = "An error has occurred"
+
+            print("Error: %s" % e)
 
         return {"status": status, "message": message, "entries": entries}
 
