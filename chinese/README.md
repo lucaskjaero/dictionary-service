@@ -11,8 +11,11 @@ Build it by running `python parse_cedict.py`. You should then see the `hsk.json`
 The difficulty ratings are stored in `hsk.json`, which are applied to the dictionary when it is built. They are stored with dictionary ids to identify which specific entry is being referred to. (Some words have more than one entry, but only one is appropriate)
 
 ### Applying the ratings
-1. To recreate this, you should get the word lists in JSON, and then you can run the disambiguation tool.
+1. To recreate this, you should get the word lists in JSON [here](https://github.com/gigacool/hanyu-shuiping-kaoshi), and then you can run the disambiguation tool.
 2. Run `python apply_hsk_values.py <hsk_word_file> <output_file.json>`.
 3. This will automatically apply ratings for the words with only one entry, and prompt you to choose which entry to use if there is more than one.
 4. Add the output from the file into `hsk.json` under the appropriate level.
 5. Rebuild the dictionary to update your server.
+
+### Credits
+Thanks to [CEDICT](https://cc-cedict.org/editor/editor.php) for providing the dicitonary and [gigacool](https://github.com/gigacool/hanyu-shuiping-kaoshi) for providing the HSK word lists.
