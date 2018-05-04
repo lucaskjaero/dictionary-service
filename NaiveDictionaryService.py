@@ -18,7 +18,11 @@ class WordHandler(Resource):
         status = "OK"
 
         if language == "chinese":
-            entries = get_definition(word)
+            try:
+                entries = get_definition(word)
+            except:
+                status = "ERROR"
+                message = "An error has occurred"
         else:
             status = "ERROR"
             message = "Language %s has not been implemented yet." % language
