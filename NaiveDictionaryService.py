@@ -34,7 +34,7 @@ class WordHandler(Resource):
             status = "ERROR"
             message = "An error has occurred"
 
-            print("Error getting word %s: %s" % (word, e))
+            LOGGER.error("Error getting word %s: %s" % (word, e))
 
         return {"status": status, "message": message, "entries": entries}
 
