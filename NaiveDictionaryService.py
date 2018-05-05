@@ -23,7 +23,7 @@ class WordHandler(Resource):
 
         try:
             if language == "chinese":
-                message, entries = get_definition(word)
+                entries, message = get_definition(word)
                 LOGGER.info("Getting definition for %s"  % word)
             else:
                 status = "ERROR"
