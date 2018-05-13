@@ -2,14 +2,12 @@ import json
 
 from flask import Flask, request
 from flask_restful import Resource, Api
-from flask_cors import CORS
 
 from chinese.Chinese import get_definition, HSKHandler
 from Logger import get_logger
 
 app = Flask(__name__)
 api = Api(app)
-cors = CORS(app)
 
 LOGGER = get_logger()
 
