@@ -1,6 +1,4 @@
-import json
-
-from flask import Flask, request
+from flask import Flask
 from flask_restful import Resource, Api
 
 from chinese.Chinese import get_definition, HSKHandler
@@ -23,7 +21,7 @@ class WordHandler(Resource):
         try:
             if language == "chinese":
                 entries, message = get_definition(word)
-                LOGGER.info("Getting definition for %s"  % word)
+                LOGGER.info("Getting definition for %s" % word)
 
                 if len(entries) == 0:
                     response_code = 404
@@ -42,6 +40,7 @@ class WordHandler(Resource):
             response_code = 500
 
         return {"status": status, "message": message, "entries": entries}, response_code
+
 
 api.add_resource(WordHandler, '/v1/<string:language>/definition/<string:word>')
 api.add_resource(HSKHandler, '/v1/chinese/hsk/<int:level>')
