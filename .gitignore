@@ -108,3 +108,4 @@ hsk-level-*.json
 
 # Scratchpads
 *.ipynb
+dictionary_service

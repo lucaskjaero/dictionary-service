@@ -2,12 +2,9 @@ from flask import Flask
 from flask_restful import Resource, Api
 
 from chinese.Chinese import get_definition, HSKHandler
-from Logger import get_logger
 
 app = Flask(__name__)
 api = Api(app)
-
-LOGGER = get_logger()
 
 
 class WordHandler(Resource):
@@ -21,7 +18,7 @@ class WordHandler(Resource):
         try:
             if language == "chinese":
                 entries, message = get_definition(word)
-                LOGGER.info("Getting definition for %s" % word)
+                print("Getting definition for %s" % word)
 
                 if len(entries) == 0:
                     response_code = 404
@@ -29,14 +26,14 @@ class WordHandler(Resource):
             else:
                 status = "ERROR"
                 message = "Language %s has not been implemented yet." % language
-                LOGGER.error("Customer tried to get definitions in %s" % language)
+                print("Customer tried to get definitions in %s" % language)
                 response_code = 400
 
         except exception as e:
             status = "ERROR"
             message = "An error has occurred"
 
-            LOGGER.error("Error getting word %s: %s" % (word, e))
+            print("Error getting word %s: %s" % (word, e))
             response_code = 500
 
         return {"status": status, "message": message, "entries": entries}, response_code
