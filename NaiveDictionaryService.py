@@ -28,7 +28,7 @@ class WordHandler(Resource):
 
             else:
                 status = "ERROR"
-                message = "Language %s has not been implemented yet." % language
+                message = "Language %s has not been implemented yet" % language
                 LOGGER.error("Customer tried to get definitions in %s" % language)
                 response_code = 400
 
