@@ -39,8 +39,14 @@ class WordHandler(Resource):
         return {"status": status, "message": message, "entries": entries}, response_code
 
 
+class HealthHandler(Resource):
+    def get(self):
+        return "Dictionary service is up", 200
+
+
 api.add_resource(WordHandler, '/v1/<string:language>/definition/<string:word>')
 api.add_resource(HSKHandler, '/v1/chinese/hsk/<int:level>')
+api.add_resource(HealthHandler, '/')
 
 if __name__ == '__main__':
     app.run(debug=False)
