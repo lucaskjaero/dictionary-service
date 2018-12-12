@@ -10,16 +10,15 @@ defmodule DictionaryService.WordLookup do
   end
 
   def init(language) do
-    data = load_data(language)
-
-    {:ok, data}
+    {:ok, load_data(language)}
   end
 
   def load_data(language) do
-    %{heng: "hahaha"}
+    %{"heng" => "hahaha"}
   end
 
   def handle_call({:lookup, word}, _from, data) do
-    {:reply, data[word], data}
+    response = Map.get(data, word, "not found")
+    {:reply, response, data}
   end
 end
