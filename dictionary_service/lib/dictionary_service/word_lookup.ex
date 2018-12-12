@@ -1,19 +1,21 @@
 defmodule DictionaryService.WordLookup do
   use GenServer
 
-  def lookup(pid, word) do
-    GenServer.call(pid, {:lookup, word})
+  def lookup(word) do
+    GenServer.call(:lookup, {:lookup, word})
   end
 
-  def start_link(data) do
-    GenServer.start_link(__MODULE__, data)
+  def start_link(language) do
+    GenServer.start_link(__MODULE__, language, name: :lookup)
   end
 
-  def init(data) do
+  def init(language) do
+    data = load_data(language)
+
     {:ok, data}
   end
 
-  def load_data(path) do
+  def load_data(language) do
     %{heng: "hahaha"}
   end
 

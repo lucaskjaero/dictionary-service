@@ -6,13 +6,14 @@ defmodule DictionaryService.Application do
   use Application
 
   def start(_type, _args) do
+    import Supervisor.Spec, warn: false
     # List all child processes to be supervised
     children = [
       # Start the endpoint when the application starts
       DictionaryServiceWeb.Endpoint,
       # Starts a worker by calling: DictionaryService.Worker.start_link(arg)
       # {DictionaryService.Worker, arg},
-      {DictionaryService.WordLookup, DictionaryService.WordLookup.load_data("chinese")}
+      {DictionaryService.WordLookup, "chinese"}
     ]
 
     # See https://hexdocs.pm/elixir/Supervisor.html
