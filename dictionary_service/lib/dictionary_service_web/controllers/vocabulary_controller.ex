@@ -6,7 +6,7 @@ defmodule DictionaryServiceWeb.VocabularyController do
   end
 
   defp lookup_word("chinese", word) do
-    DictionaryService.WordLookup.lookup(word)
+    DictionaryService.ChineseLookup.lookup(word)
   end
 
   defp lookup_word(_language, _word) do
