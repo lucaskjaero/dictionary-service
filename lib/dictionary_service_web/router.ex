@@ -5,6 +5,12 @@ defmodule DictionaryServiceWeb.Router do
     plug :accepts, ["json"]
   end
 
+  scope "/", DictionaryServiceWeb do
+    pipe_through(:api)
+
+    get("/", HealthController, :request)
+  end
+
   scope "/api/v1/", DictionaryServiceWeb do
     pipe_through(:api)
 

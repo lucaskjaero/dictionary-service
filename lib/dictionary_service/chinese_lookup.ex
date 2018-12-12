@@ -10,7 +10,7 @@ defmodule DictionaryService.ChineseLookup do
   end
 
   def init(_language) do
-    {:ok, raw} = File.read("cedict.json")
+    {:ok, raw} = File.read("chinese/cedict.json")
     {:ok, data} = Poison.decode(raw)
     {:ok, data}
   end
