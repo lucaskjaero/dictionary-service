@@ -11,7 +11,7 @@ defmodule DictionaryServiceWeb.Router do
     get("/", HealthController, :request)
   end
 
-  scope "/api/v1/", DictionaryServiceWeb do
+  scope "/v1/", DictionaryServiceWeb do
     pipe_through(:api)
 
     # Vocab lookup
