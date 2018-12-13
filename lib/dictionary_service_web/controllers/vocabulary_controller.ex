@@ -2,7 +2,7 @@ defmodule DictionaryServiceWeb.VocabularyController do
   use DictionaryServiceWeb, :controller
 
   def request(conn, %{"language" => language, "word" => word}) do
-    json(conn, %{entries: lookup_word(language, word)})
+    json(conn, %{entries: lookup_word(language, word, status: "OK")})
   end
 
   defp lookup_word("chinese", word) do
