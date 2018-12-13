@@ -1,9 +1,9 @@
-scope "/api/v1/", DictionaryServiceWeb do
-    pipe_through(:api)
+scope "/v1/", DictionaryServiceWeb do
+  pipe_through(:api)
 
-    # Vocab lookup
-    get("/:language/definition/:word", VocabularyController, :request)
+  # Vocab lookup
+  get("/:language/definition/:word", VocabularyController, :request)
 
-    # Level lists by language
-    get("/chinese/hsk/:level", HSKController, :request)
-  end
+  # Level lists by language
+  get("/chinese/hsk/:level", HSKController, :request)
+end
