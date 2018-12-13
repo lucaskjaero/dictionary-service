@@ -108,6 +108,7 @@ hsk-level-*.json
 
 # Scratchpads
 *.ipynb
+<<<<<<< HEAD
 
 # The directory Mix will write compiled artifacts to.
 /_build/
@@ -145,3 +146,6 @@ dictionary_service-*.tar
 # secrets files as long as you replace their contents by environment
 # variables.
 /config/*.secret.exs
+=======
+dictionary_service
+>>>>>>> master
