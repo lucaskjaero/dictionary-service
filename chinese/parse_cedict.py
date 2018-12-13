@@ -8,11 +8,13 @@ def parse_entry(line):
 
     # Since the definition can have slashes, let's take this off first
     front, back = cleaned_line.split("/", 1)
-    definitions = back[:-1].split("/") # No trailing / and multiple definitions
+    # No trailing / and multiple definitions
+    definitions = back[:-1].split("/")
 
     # Extract the pinyin next since there's a defined pattern for this
     head, tail = front.split("[")
-    pinyin = tail.replace("]", "")[:-1] # Remove trailing space
+    # Remove trailing space
+    pinyin = tail.replace("]", "")[:-1]
 
     # Carve up the rest
     traditional, simplified, _ = head.split(" ")
@@ -54,7 +56,9 @@ def apply_hsk(entries):
 def main():
     entries = []
     with io.open("cedict_ts.u8", encoding="utf-8") as cedict_file:
-        entries.extend([parse_entry(line) for line in cedict_file if line[0] != "#"])
+        entries.extend(
+            [parse_entry(line) for line in cedict_file if line[0] != "#"]
+        )
 
     # Assign unique ID to match to difficulty levels
     for index, entry in enumerate(entries):
