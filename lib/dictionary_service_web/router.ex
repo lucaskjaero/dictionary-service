@@ -20,4 +20,11 @@ defmodule DictionaryServiceWeb.Router do
     # Level lists by language
     get("/chinese/hsk/:level", HSKController, :request)
   end
+
+  scope "/stemming/v1/", DictionaryServiceWeb do
+    pipe_through(:api)
+
+    # Vocab lookup
+    post("/:language/document", StemmingController, :request)
+  end
 end

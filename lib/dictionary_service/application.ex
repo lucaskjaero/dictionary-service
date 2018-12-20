@@ -13,7 +13,8 @@ defmodule DictionaryService.Application do
       DictionaryServiceWeb.Endpoint,
       # Starts a worker by calling: DictionaryService.Worker.start_link(arg)
       # {DictionaryService.Worker, arg},
-      DictionaryService.ChineseLookup
+      DictionaryService.ChineseLookup,
+      DictionaryService.Stemmer
     ]
 
     # See https://hexdocs.pm/elixir/Supervisor.html

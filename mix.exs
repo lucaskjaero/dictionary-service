@@ -39,8 +39,8 @@ defmodule DictionaryService.MixProject do
       {:gettext, "~> 0.11"},
       {:jason, "~> 1.0"},
       {:plug_cowboy, "~> 2.0"},
-      #  {:goth, "~> 0.7.0"},
-      {:google_api_language, "~> 0.0.1"}
+      {:goth, "~> 0.7.0"},
+      {:google_api_language, "~> 0.1.0"}
     ]
   end
 end
